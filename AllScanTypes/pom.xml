@@ -33,13 +33,24 @@
 		<groupId>org.hibernate</groupId>
 		<artifactId>hibernate-core</artifactId>
 		<version>4.0.1.Final</version>
+		<exclusions>
+			<exclusion>
+				<groupId>dom4j</groupId>
+				<artifactId>dom4j</artifactId>
+			</exclusion>
+		</exclusions>
+	</dependency>
+	<dependency>
+		<groupId>org.dom4j</groupId>
+		<artifactId>dom4j</artifactId>
+		<version>2.1.4</version>
 	</dependency>
 	<dependency>
     <groupId>javax.servlet</groupId>
     <artifactId>servlet-api</artifactId>
     <version>2.3</version>
     <scope>provided</scope>
-</dependency>	 	
+</dependency>
   </dependencies>
   <build>
     <finalName>JavaVulnerableLab</finalName>
