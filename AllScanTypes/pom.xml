@@ -34,6 +34,12 @@
 		<artifactId>hibernate-core</artifactId>
 		<version>4.0.1.Final</version>
 	</dependency>
+	<!-- Override transitive commons-collections to fix CVE-2015-4852 -->
+	<dependency>
+		<groupId>commons-collections</groupId>
+		<artifactId>commons-collections</artifactId>
+		<version>3.2.2</version>
+	</dependency>
 	<dependency>
     <groupId>javax.servlet</groupId>
     <artifactId>servlet-api</artifactId>
